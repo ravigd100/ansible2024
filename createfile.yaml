@@ -1,0 +1,10 @@
+---
+- hosts: Linux
+  gather_facts: no
+  tasks:
+  - name: Create file
+    ansible.builtin.file:
+      path: /home/ansible/training
+      state: touch
+  - name: create another file using shell
+    shell: touch "/home/ansible/trainingshell.txt"

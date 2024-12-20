@@ -1,0 +1,6 @@
+---
+- hosts: Centos
+  tasks:
+    - name: test
+      debug:
+        msg: This is a testing message

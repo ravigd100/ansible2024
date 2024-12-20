@@ -1,0 +1,7 @@
+---
+- hosts: ubuntu
+  tasks:
+  - name: Run a Task
+    command: sleep 10
+    async: 10
+    poll: 2

@@ -1,0 +1,10 @@
+---
+- hosts: Centos 
+  tasks:
+    - name: run a command
+      command:
+        echo "am on a training today"
+      register: out
+    - debug:
+        msg: standard output is "{{out.stdout}}"
+      when: out.stdout!=""  

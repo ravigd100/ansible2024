@@ -1,0 +1,10 @@
+---
+- hosts: ubuntu
+  become: yes
+  tasks:
+  - name: create users
+    user:
+      name: "testuser{{ item }}"
+      state: present
+    loop: "{{ range(1,10) }}"
+    when: item < 5

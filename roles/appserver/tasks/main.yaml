@@ -1,0 +1,4 @@
+---
+- name: test role scenario
+  debug:
+    msg: "test1"

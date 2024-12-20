@@ -1,0 +1,15 @@
+[Linux]
+192.168.10.88 ansible_ssh_user=ansible
+192.168.10.90 ansible_ssh_user=ansible
+[Centos]
+192.168.10.90 ansible_ssh_user=ansible
+[win]
+192.168.10.89
+[ubuntu]
+192.168.10.88 ansible_ssh_user=ansible value=host
+[win:vars]
+ansible_user=Administrator
+ansible_password=P@ssword
+ansible_connection=winrm
+ansible_winrm_scheme=http
+ansible_port=5985
